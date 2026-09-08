@@ -28,6 +28,8 @@ for t, threads in enumerate(executionRange):
         completionTime = float(runAndGetResult(threads, megaBytes))
         completionTimes[t][n] = completionTime
          
+print(completionTimes)
+
 # Create index grid for uniform bar spacing
 xpos, ypos = np.meshgrid(np.arange(entries), np.arange(entries), indexing='ij')
 
