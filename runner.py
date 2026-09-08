@@ -65,7 +65,7 @@ ax.set_yticklabels(executionLabels)
 
 # Set axis labels
 ax.set_xlabel("Threads")
-ax.set_ylabel("Megabytes per thread")
+ax.set_ylabel("Array size [Mega Bytes]")
 ax.set_zlabel("Seconds")
 
 # Save the figure to file
