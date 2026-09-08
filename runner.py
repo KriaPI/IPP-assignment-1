@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # arraySize is in MB.
 def runAndGetResult(threadCount: int, arraySize: int):
-    processResult = subprocess.run(["./performance", "1", "1"], capture_output=True)
+    processResult = subprocess.run(["./performance", f"{threadCount}", f"{arraySize}"], capture_output=True)
     result = processResult.stdout.decode()
     return re.search("[+-]?([0-9]*[.])?[0-9]+", result)[0]
 
